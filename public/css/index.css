@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+html,body {
+	width: 100%;
+	height: 100%
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: 640px;
+	margin: 0 auto;
+	font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+	font-size: 14px;
+	background-color: #f0f7fb
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+img {
+	max-width: 100%;
+	object-fit: contain
+}
+
+.header {
+	flex: none;
+	height: 62px
+}
+
+.site-header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 61px;
+	border-bottom: 1px solid #2af4ff;
+	color: #fff;
+	font-size: 14px;
+	background-color: #083895
+}
+
+.main {
+	flex: 1
+}
+
+.app-card {
+	margin: 10px;
+	padding: 15px;
+	border: 2px solid #eaf2f5;
+	border-radius: 5px;
+	background-color: #fff
+}
+
+.app-card:not(:last-child) {
+	margin-bottom: 12px
+}
+
+.app-card-header {
+	display: flex;
+	margin-bottom: 15px
+}
+
+.app-logo {
+	overflow: hidden;
+	flex: none;
+	width: 85px;
+	height: 85px;
+	margin-right: 20px;
+	border-radius: 6px
+}
+
+.app-intro {
+	margin: 5px 0;
+	font-size: 14px;
+	line-height: 1.5
+}
+
+.app-desc {
+  overflow: hidden;
+	line-height: 1.5;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 4;
+}
+
+.app-star {
+	color: #ffba00;
+	font-size: 16px
+}
+
+.app-reviews {
+	position: relative;
+	display: inline-block;
+	padding-right: 20px;
+	color: #00abf3;
+	font-size: 14px;
+	font-weight: 600
+}
+
+.app-reviews::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 0;
+	border-width: 7px;
+	border-color: transparent transparent transparent #00abf3;
+	border-style: solid
+}
+
+.app-reviews::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	border-width: 7px 4px;
+	border-color: transparent transparent transparent #fff;
+	border-style: solid
+}
+
+.app-more-btn {
+	position: relative;
+	display: inline-block;
+	margin: 10px 0 15px;
+	padding-right: 25px;
+	color: #00abf3;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none
+}
+
+.app-more-btn::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	border-width: 7px;
+	border-color: transparent transparent transparent #00abf3;
+	border-style: solid
+}
+
+.app-more-btn::after {
+	content: "";
+	position: absolute;
+	right: 6px;
+	border-width: 7px 4px;
+	border-color: transparent transparent transparent #fff;
+	border-style: solid
+}
+
+.app-info-box {
+	display: flex
+}
+
+.app-info {
+	flex: none;
+	display: flex;
+	align-items: center;
+	width: 50%;
+	font-weight: 500
+}
+
+.app-info>svg {
+	flex: none
+}
+
+.app-info-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.app-testimonial {
+	margin: 20px 0;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.7;
+	background-color: #d9ebf9
+}
+
+.app-testimonial-author {
+	color: #646464;
+	font-style: italic
+}
+
+.app-view-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: #15b71d
+}
+
+.footer {
+	flex: none;
+	padding: 5px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.8;
+	background-color: #083895
+}
+
+.footer a {
+	color: #fff;
+	text-decoration: underline
+}
+
+.adv {
+	margin: 10px 0;
+	text-align: center
+}
