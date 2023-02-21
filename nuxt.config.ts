@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "components": "/components"
   },
   modules: [
-    '@nuxt/devtools',
+    '@nuxt/devtools', 'nuxt-back-to-top'
   ],
   devtools: {
     // Enable devtools (default: true)

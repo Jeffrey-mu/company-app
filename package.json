@@ -11,6 +11,7 @@
     "nuxt": "^3.2.2"
   },
   "dependencies": {
-    "@nuxt/devtools": "^0.1.4"
+    "@nuxt/devtools": "^0.1.4",
+    "nuxt-back-to-top": "^0.0.4"
   }
 }

@@ -3,9 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@nuxt/devtools': ^0.1.4
   nuxt: ^3.2.2
+  nuxt-back-to-top: ^0.0.4
 
 dependencies:
   '@nuxt/devtools': 0.1.4_nuxt@3.2.2
+  nuxt-back-to-top: 0.0.4
 
 devDependencies:
   nuxt: 3.2.2
@@ -3571,6 +3573,15 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+
+  /nuxt-back-to-top/0.0.4:
+    resolution: {integrity: sha512-MIDxQPxkIZ9yN1YcSjmrrEnW4CAS2DZqhhOupObVua2zUelyLJkVUrG7RfJEz+NmtNE906fMY92Htgn6tj1kzA==}
+    dependencies:
+      '@nuxt/kit': 3.2.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
 
   /nuxt/3.2.2:
     resolution: {integrity: sha512-fxO8zjNwWBd6ORvuOgVFXksd0+eliWSNQwACsCwqNRFXsjFawONfvqtdTd/pBOlRDZMJpPUTvdflsyHPaAsfJg==}

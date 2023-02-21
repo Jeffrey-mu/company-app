@@ -13,6 +13,13 @@ const show = ref(false)
 const data = ref({})
 let temData = await import.meta.glob('/api/*.json')[`/api/${route.params.id}.json`]()
 data.value = temData.default[0]
+useHead({
+  script: [
+    {
+
+    }
+  ]
+})
 show.value = true
 const colors = [
   "#00bfa9",
@@ -33,6 +40,7 @@ const colors = [
 
 <template>
   <div v-if="show" style="padding: 0 10px;">
+
     <AppCardHeader :data="data" />
 
     <p><b>Overview</b></p>
