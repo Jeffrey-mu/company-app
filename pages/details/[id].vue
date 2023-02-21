@@ -1,18 +1,18 @@
 <script setup>
-import AppCardHeader from '../../components/AppCardHeader'
-import AppInfoBox from '../../components/AppInfoBox'
-import AppDescBox from '../../components/AppDescBox'
-import Certifications from '../../components/Certifications'
-import LocationBox from '../../components/LocationBox'
-import Divider from '../../components/Divider'
-import ChartBox from '../../components/ChartBox'
-import ReviewerBox from '../../components/ReviewerBox'
-import ClientsPortfolios from '../../components/ClientsPortfolios'
+import AppCardHeader from 'components/AppCardHeader'
+import AppInfoBox from 'components/AppInfoBox'
+import AppDescBox from 'components/AppDescBox'
+import Certifications from 'components/Certifications'
+import LocationBox from 'components/LocationBox'
+import Divider from 'components/Divider'
+import ChartBox from 'components/ChartBox'
+import ReviewerBox from 'components/ReviewerBox'
+import ClientsPortfolios from 'components/ClientsPortfolios'
 const route = useRoute()
 const show = ref(false)
 const data = ref({})
-let d = await import.meta.glob('/public/*.json')[`/public/${route.params.id}.json`]()
-data.value = d.default[0]
+let temData = await import.meta.glob('/public/*.json')[`/public/${route.params.id}.json`]()
+data.value = temData.default[0]
 show.value = true
 const colors = [
   "#00bfa9",

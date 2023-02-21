@@ -1,7 +1,7 @@
 <script setup>
 import data from '/public/index.json'
-import AppCardHeader from '../components/AppCardHeader'
-import AppInfoBox from '../components/AppInfoBox'
+import AppCardHeader from 'components/AppCardHeader'
+import AppInfoBox from 'components/AppInfoBox'
 const line = ref(4)
 </script>
 <template>
