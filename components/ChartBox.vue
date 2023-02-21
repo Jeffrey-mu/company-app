@@ -17,7 +17,8 @@ export default {
         "#6f4ba4",
         "#85459a",
         "#9a3e90",
-        "#b03786"]
+        "#b03786"],
+      show: false
     }
   }
 }
@@ -29,13 +30,13 @@ export default {
       <div v-for="item, index in data.focus_area[type]" :key="item"
         :style="{ width: item.count + '%', backgroundColor: colors[index] }"></div>
     </div>
-    <div class="chart-legend-box">
-      <div class="chart-text-box" v-for="item, index in data.focus_area[type]" :key="item">
+    <div class="chart-legend-box" :class="{ '-more': show }">
+      <div class="chart-text-box" v-for="item, index in data.focus_area[type]" :key="item" v-show="index < 4 || show">
         <div class="chart-dot" :style="{ backgroundColor: colors[index] }"></div>
         <div class="chart-text">{{ item.label }}</div>
         <div class="chart-per">{{ item.count }}%</div>
       </div>
-      <div class="show-more-legend-btn">
+      <div class="show-more-legend-btn" @click="show =!show">
         <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="11px" viewBox="0 0 21 11">
           <use xlink:href="#svg_arrow"></use>
         </svg>

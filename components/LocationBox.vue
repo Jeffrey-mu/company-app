@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <template>
-  <div class="location-box">
+  <div class="location-box" :class="{'-more': show}">
     <div class="location-item" v-for="item, index in data.address_list" :key="item" v-show="show || !index">
       <p class="reviewer-title location-row">
         <img class="country-flag" :src="item.icon" alt="">
@@ -26,6 +26,6 @@ export default {
       </p>
     </div>
 
-    <div class="show-all-location-btn" @click="show = !show"></div>
+    <div class="show-all-location-btn " @click="show = !show"></div>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 <template>
   <template>
@@ -80,7 +81,10 @@ import Header from './components/Header.vue'
   </template>
 
   <Header />
-  <NuxtPage />
+  <div class="main">
+    <NuxtPage />
+  </div>
+  <Footer />
 </template>
 
 <style>

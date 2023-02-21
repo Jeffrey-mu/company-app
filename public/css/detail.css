@@ -310,7 +310,7 @@ img {
 }
 
 .chart-text-box {
-	display: none;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 10px 5px

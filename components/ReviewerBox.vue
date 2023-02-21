@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <template>
-  <div class="reviewer-box">
+  <div class="reviewer-box" :class="{ '-more': show }">
     <p class="reviewer-title">
       {{ item.short_describe }}
     </p>
@@ -80,7 +80,7 @@ export default {
     </template>
 
     <div class="show-more-review-btn" @click="show = !show">
-      <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="11px" viewBox="0 0 21 11">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="11px" viewBox="0 0 21 11" :style="{transform: show ? 'rotate(180deg)' : ''}">
         <use xlink:href="#svg_arrow"></use>
       </svg>
     </div>
