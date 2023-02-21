@@ -88,6 +88,7 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style>
+@import "/css/detail.css";
 @import "/css/index.css";
 
 .page-enter-active,

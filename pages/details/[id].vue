@@ -73,6 +73,4 @@ const colors = [
     <ClientsPortfolios :data="data"/>
   </div>
 </template>
-<style>
-@import "/css/detail.css"
-</style>
+

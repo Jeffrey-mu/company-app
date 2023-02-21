@@ -51,6 +51,7 @@ img {
 }
 
 .main {
+	padding-bottom: 50px;
 	flex: 1;
 	min-height: calc(100vh - 60px);
 }
@@ -210,13 +211,16 @@ img {
 }
 
 .footer {
+	position: absolute;
 	flex: none;
+	left: 0;
 	padding: 5px;
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
 	line-height: 1.8;
-	background-color: #083895
+	background-color: #083895;
+	width: 100%
 }
 
 .footer a {
