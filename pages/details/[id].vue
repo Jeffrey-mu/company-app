@@ -11,7 +11,7 @@ import ClientsPortfolios from 'components/ClientsPortfolios'
 const route = useRoute()
 const show = ref(false)
 const data = ref({})
-let temData = await import.meta.glob('/public/*.json')[`/public/${route.params.id}.json`]()
+let temData = await import.meta.glob('/api/*.json')[`/api/${route.params.id}.json`]()
 data.value = temData.default[0]
 show.value = true
 const colors = [
@@ -32,7 +32,7 @@ const colors = [
 </script>
 
 <template>
-  <div v-if="show">
+  <div v-if="show" style="padding: 0 10px;">
     <AppCardHeader :data="data" />
 
     <p><b>Overview</b></p>
