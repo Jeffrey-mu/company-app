@@ -1,6 +1,7 @@
 <script setup>
 import Header from 'components/Header.vue'
 import Footer from 'components/Footer.vue'
+import adv from '/api/details_1.json'
 </script>
 <template>
   <template>
@@ -81,6 +82,15 @@ import Footer from 'components/Footer.vue'
   </template>
 
   <Header />
+
+  <head>
+    <div v-html="adv.find(el => el.position_id === 1).script">
+
+    </div>
+  </head>
+  <div v-html="adv.find(el => el.position_id === 2).script">
+
+  </div>
   <div class="main">
     <NuxtPage />
   </div>
