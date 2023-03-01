@@ -1,5 +1,5 @@
 <script setup lang="ts" >
-defineProps<{ data: any }>();
+defineProps<{ item: any }>();
 const show = ref(false)
 </script>
 <template>
