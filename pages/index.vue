@@ -1,5 +1,5 @@
 <script setup>
-import data from '/api/index1.json'
+import data from '/api/index.json'
 import AppCardHeader from 'components/AppCardHeader'
 import AppInfoBox from 'components/AppInfoBox'
 const line = ref(4)

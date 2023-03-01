@@ -12,7 +12,7 @@ const route = useRoute()
 const show = ref(false)
 const data = ref({})
 let temData = await import.meta.glob('/api/*.json')[`/api/${route.params.id}.json`]()
-data.value = temData.default[0]
+data.value = temData.default
 useHead({
   script: [
     {
