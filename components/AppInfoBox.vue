@@ -1,8 +1,7 @@
-<script>
-export default {
-  props: ['data']
-}
-</script>
+
+<script setup lang="ts" >
+defineProps<{ data: any }>();
+</script >
 <template>
   <div class="app-info-box">
     <div class="app-info">

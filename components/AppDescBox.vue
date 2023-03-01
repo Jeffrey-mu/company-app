@@ -1,13 +1,8 @@
-<script>
-export default {
-  props: ['data'],
-  data() {
-    return {
-      count: 13
-    }
-  }
-}
-</script>
+
+<script setup lang="ts" >
+defineProps<{ data: any }>();
+const count = ref(13)
+</script >
 <template>
   <div class="app-desc-box">
     <div class="app-desc-short" v-html="data.company_content" :style="{ '-webkit-line-clamp': count }">

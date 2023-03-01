@@ -1,12 +1,6 @@
-<script>
-export default {
-  props: ['data'],
-  data() {
-    return {
-      show: false
-    }
-  }
-}
+<script setup lang="ts" >
+defineProps<{ data: any }>();
+const show = ref(false)
 </script>
 <template>
   <div class="location-box" :class="{'-more': show}">

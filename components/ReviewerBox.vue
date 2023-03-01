@@ -1,12 +1,6 @@
-<script>
-export default {
-  props: ['item'],
-  data() {
-    return {
-      show: false
-    }
-  }
-}
+<script setup lang="ts" >
+defineProps<{ data: any }>();
+const show = ref(false)
 </script>
 <template>
   <div class="reviewer-box" :class="{ '-more': show }">
