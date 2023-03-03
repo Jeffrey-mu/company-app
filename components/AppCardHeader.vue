@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import type { DataModel } from '../types/DataModel'
- defineProps<{ data: DataModel }>();
+defineProps<{ data: any }>();
 </script>
 <template>
   <div class="app-card-header">
