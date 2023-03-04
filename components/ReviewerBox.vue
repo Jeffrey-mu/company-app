@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ReviewerItem from './ReviewerItem.vue'
 defineProps<{ data: any }>();
 </script>
 <template>
